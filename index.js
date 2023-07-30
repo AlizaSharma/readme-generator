@@ -1,7 +1,50 @@
-// TODO: Include packages needed for this application
+const inquirer = require('inquirer');
 
-// TODO: Create an array of questions for user input
-const questions = [];
+const fs = require('fs');
+
+inquirer
+  .prompt([
+    {
+      type: 'input',
+      name: 'title',
+      message: 'What is the title of your ReadME?',
+    },
+    {
+      type: 'input',
+      message: 'Provide a brief project overview and description?',
+      name: 'description',
+    },
+    {
+      type: 'input',
+      message: 'Provide installation instructions for your app.',
+      name: 'installation',
+      
+    },
+    {
+    type: 'input',
+    message: 'What is the usage information?',
+    name: 'usage',
+        
+      },
+    {
+    type: 'input',
+    message: 'What are the controbitution guidelines?',
+    name: 'contribution',
+      
+      },
+
+    {
+    type: 'input',
+    message: 'What are the test instructions?',
+    name: 'test',
+          
+          },
+  ])
+
+
+
+
+
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {}
