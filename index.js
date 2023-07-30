@@ -49,7 +49,7 @@ inquirer
     type: 'list',
     message: 'What license was used for this app?',
     name: 'license',
-    choices:  ['PD', 'CC Zero', 'CC-BY', 'MIT']
+    choices:  ['PD', 'CC-Zero', 'CC-BY', 'MIT']
                 
     },
 
