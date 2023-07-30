@@ -1,21 +1,21 @@
-# aliza 
-  ## Description
-  This is a test
-  ## Table of Contents 
-  ## Installation 
-  download
-  ## Usage 
-  doesn't matter
-  ## Contribution Guidelines 
-  it's okay
-  ## Test Instructions 
-  follow
-  ## License 
-  CC-BY
-  ## Questions 
-  For questions please contact me via: 
-  aliza
-  aliza
+# ReadME-Generator 
+
+## Description
+The purpose of this project was to create a command-line application that dynamically generates a professional README.md file from a user's input using the Inquirer package.
+
+## Table of Contents 
+* [Usage](#usage)
+* [Questions](#questions)
+
+## Usage 
+The  Git Hub Repo [URL](https://github.com/AlizaSharma/readme-generator). 
+
+See example below of expected outcome:
+
+![ReadME Generator](./assets/ReadME-Sample.png)
+
+## Questions 
+If questions arise on the project, please contact alize.sharma12@gmail.com. 
 
 
 
