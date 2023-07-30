@@ -38,7 +38,30 @@ inquirer
     message: 'What are the test instructions?',
     name: 'test',
           
-          },
+    },
+
+   
+   { 
+    type: 'list',
+    message: 'What license was used for this app?',
+    name: 'license',
+    choices:  ['PD', 'CC Zero', 'CC-BY', 'MIT']
+                
+    },
+
+    {
+    type: 'input',
+    message: 'What is your GitHub username?',
+    name: 'github',
+              
+    },
+
+    {
+    type: 'input',
+    message: 'What is your email address?',
+    name: 'email',
+          
+    },
   ])
 
 
