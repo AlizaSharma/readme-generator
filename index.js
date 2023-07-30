@@ -2,6 +2,10 @@ const inquirer = require('inquirer');
 
 const fs = require('fs');
 
+const generateMarkdown = require('./utils/generateMarkdown')
+
+function init() {
+
 inquirer
   .prompt([
     {
@@ -28,7 +32,7 @@ inquirer
       },
     {
     type: 'input',
-    message: 'What are the controbitution guidelines?',
+    message: 'What are the contribution guidelines?',
     name: 'contribution',
       
       },
@@ -64,16 +68,17 @@ inquirer
     },
   ])
 
+  .then((answer) => {
+    writeToFile("TestReadME.md", generateMarkdown(answer))
+  })}
 
 
 
+function writeToFile(fileName, data) {
+    fs.writeFile(fileName, data,
+    (err) =>
+    err ? console.error(err) : console.log('ReadME Success!'))
+}
 
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
-
-// TODO: Create a function to initialize app
-function init() {}
-
-// Function call to initialize app
 init();
